@@ -4,5 +4,6 @@
         <page name='1_Sonar_Sweep'/>
         <page name='2_Dive!'/>
         <page name='3_Binary_Diagnostic'/>
+        <page name='4_Bingo'/>
     </pages>
 </playground>

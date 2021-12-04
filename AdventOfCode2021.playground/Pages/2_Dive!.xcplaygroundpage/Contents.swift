@@ -1,6 +1,4 @@
-//: [Previous](@previous)
-
-import UIKit
+import Foundation
 
 // https://adventofcode.com/2021/day/2
 
@@ -66,5 +64,3 @@ if calculateResultPuzzle2(input: testInput) != 900 {
 }
 
 print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")
-
-//: [Next](@next)
