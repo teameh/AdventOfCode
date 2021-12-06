@@ -632,21 +632,19 @@ struct Board: Equatable {
     let boardNumbers: [[Int]]
 
     func hasBingo(bingoNumbers: [Int]) -> Bool {
-        let horizontalBingo = boardNumbers.contains { numbers in
-            numbers.allSatisfy { number in
-                bingoNumbers.contains(number)
+        hasHorizontalBingo(bingoNumbers: bingoNumbers) || hasVerticalBingo(bingoNumbers: bingoNumbers)
+    }
+
+    func hasHorizontalBingo(bingoNumbers: [Int]) -> Bool {
+        boardNumbers.contains { $0.allSatisfy { bingoNumbers.contains($0) } }
+    }
+
+    func hasVerticalBingo(bingoNumbers: [Int]) -> Bool {
+        (0...boardNumbers.count-1).contains { offset in
+                boardNumbers
+                    .map { $0[offset] }
+                    .allSatisfy { bingoNumbers.contains($0) }
             }
-        }
-
-        let verticalBingo = (0...boardNumbers.count-1).contains { offset in
-            boardNumbers
-                .map { $0[offset] }
-                .allSatisfy { number in
-                    bingoNumbers.contains(number)
-                }
-        }
-
-        return horizontalBingo || verticalBingo
     }
 }
 
