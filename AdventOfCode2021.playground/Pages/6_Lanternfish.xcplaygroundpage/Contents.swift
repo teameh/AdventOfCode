@@ -44,5 +44,5 @@ func puzzle2(input: String, days: Int) -> Int {
 
 //print("Test puzzle 1: \(puzzle1(input: testInput, days: 80))")
 //print("Test puzzle 2: \(puzzle2(input: testInput, days: 256))")
-print("Answer puzzle 1: \(puzzle1(input: input, days: 80))")
-print("Answer puzzle 2: \(puzzle2(input: input, days: 256))")
+//print("Answer puzzle 1: \(puzzle1(input: input, days: 80))")
+//print("Answer puzzle 2: \(puzzle2(input: input, days: 256))")

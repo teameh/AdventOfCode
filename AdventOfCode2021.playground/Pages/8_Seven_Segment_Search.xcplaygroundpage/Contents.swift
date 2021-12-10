@@ -330,8 +330,8 @@ func puzzle2(input: String) -> Int {
         .reduce(0, +)
 }
 
-print("Test puzzle 1: \(puzzle1(input: testInput))")
-print("Answer puzzle 1: \(puzzle1(input: input))")
-
-print("Test puzzle 2: \(puzzle2(input: testInput))")
-print("Answer puzzle 2: \(puzzle2(input: input))")
+//print("Test puzzle 1: \(puzzle1(input: testInput))")
+//print("Answer puzzle 1: \(puzzle1(input: input))")
+//
+//print("Test puzzle 2: \(puzzle2(input: testInput))")
+//print("Answer puzzle 2: \(puzzle2(input: input))")

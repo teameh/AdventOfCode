@@ -708,14 +708,14 @@ func secondPuzzle(input: String, bingoNumbers: [Int]) -> Int {
         .1
         .last!
 }
-
-if firstPuzzle(input: testInput, bingoNumbers: testBingoNumbers) != 4512 {
-    throw fatalError("Invalid answer!")
-}
-
-if secondPuzzle(input: testInput, bingoNumbers: testBingoNumbers) != 1924 {
-    throw fatalError("Invalid answer!")
-}
-
-print("Test puzzle 1: \(firstPuzzle(input: input, bingoNumbers: bingoNumbers))") // 49686
-print("Test puzzle 2: \(secondPuzzle(input: input, bingoNumbers: bingoNumbers))") // 26878
+//
+//if firstPuzzle(input: testInput, bingoNumbers: testBingoNumbers) != 4512 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//if secondPuzzle(input: testInput, bingoNumbers: testBingoNumbers) != 1924 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//print("Test puzzle 1: \(firstPuzzle(input: input, bingoNumbers: bingoNumbers))") // 49686
+//print("Test puzzle 2: \(secondPuzzle(input: input, bingoNumbers: bingoNumbers))") // 26878

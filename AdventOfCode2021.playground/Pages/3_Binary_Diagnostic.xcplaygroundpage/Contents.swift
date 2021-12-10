@@ -117,13 +117,13 @@ func calculateResultPuzzle2(input: [Int]) -> Int {
         }
     return oxygenGeneratorRating * co2ScrubberRating
 }
-
-if calculateResultPuzzle2(input: testInput) != 230 {
-    throw fatalError("Invalid answer!")
-}
-
-if calculateResultPuzzle2(input: input) != 4273224 {
-    throw fatalError("Invalid answer!")
-}
-
-print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")
+//
+//if calculateResultPuzzle2(input: testInput) != 230 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//if calculateResultPuzzle2(input: input) != 4273224 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")

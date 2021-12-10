@@ -16,11 +16,6 @@ func numberOfIncreases(input: [Int]) -> Int {
     }.0
 }
 
-if numberOfIncreases(input: testInput) != 7 {
-    throw fatalError("Invalid answer!")
-}
-print("Answer puzzle 1: \(numberOfIncreases(input: input))")
-
 func calculateResultPuzzle2(input: [Int]) -> Int {
     input.enumerated()
         .compactMap { element in
@@ -43,9 +38,14 @@ func calculateResultPuzzle2(input: [Int]) -> Int {
         .increasedCount
 }
 
+//if numberOfIncreases(input: testInput) != 7 {
+//    throw fatalError("Invalid answer!")
+//}
+//print("Answer puzzle 1: \(numberOfIncreases(input: input))")
 
-if calculateResultPuzzle2(input: testInput) != 5 {
-    throw fatalError("Invalid answer!")
-}
 
-print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")
+//if calculateResultPuzzle2(input: testInput) != 5 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")

@@ -619,11 +619,11 @@ func puzzle(input: String, drawDiagonal: Bool, printGrid: Bool = false) -> Int {
         .filter { $0 >= 2 }
         .count
 }
-
-print("Test puzzle 1: \(puzzle(input: testInput, drawDiagonal: false))")
-print("Test puzzle 2: \(puzzle(input: testInput, drawDiagonal: true))")
-
-print("Answer puzzle 1: \(puzzle(input: input, drawDiagonal: false))")
-print("Answer puzzle 2: \(puzzle(input: input, drawDiagonal: true))")
-
-//: [Next](@next)
+//
+//print("Test puzzle 1: \(puzzle(input: testInput, drawDiagonal: false))")
+//print("Test puzzle 2: \(puzzle(input: testInput, drawDiagonal: true))")
+//
+//print("Answer puzzle 1: \(puzzle(input: input, drawDiagonal: false))")
+//print("Answer puzzle 2: \(puzzle(input: input, drawDiagonal: true))")
+//
+////: [Next](@next)

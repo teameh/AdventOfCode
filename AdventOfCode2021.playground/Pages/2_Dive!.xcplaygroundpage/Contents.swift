@@ -58,9 +58,9 @@ func calculateResultPuzzle2(input: [Command]) -> Int {
         }
     return horizontal * vertical
 }
-
-if calculateResultPuzzle2(input: testInput) != 900 {
-    throw fatalError("Invalid answer!")
-}
-
-print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")
+//
+//if calculateResultPuzzle2(input: testInput) != 900 {
+//    throw fatalError("Invalid answer!")
+//}
+//
+//print("Answer puzzle 2: \(calculateResultPuzzle2(input: input))")
