@@ -1,6 +1,4 @@
-import PlaygroundSupport
 import Foundation
-import UIKit
 
 let testInput = """
 5483143223
@@ -31,16 +29,12 @@ let input = """
 class Octopus: Equatable, Codable {
     var x: Int
     var y: Int
-    var e: Int
-
-    var energy: Int {
-        e
-    }
+    var energy: Int
 
     init(x: Int, y: Int, energy: Int) {
         self.x = x
         self.y = y
-        e = energy
+        self.energy = energy
     }
 
     func increase() -> Octopus {
