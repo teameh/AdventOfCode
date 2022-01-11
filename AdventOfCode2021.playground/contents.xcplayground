@@ -22,6 +22,7 @@
         <page name='19_Beacon_Scanner'/>
         <page name='20_Trench_Map'/>
         <page name='21_Dirac_Dice'/>
+        <page name='22_Reactor_Reboot'/>
         <page name='24_Arithmetic_Logic_Unit'/>
     </pages>
 </playground>
