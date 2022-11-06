@@ -245,18 +245,18 @@ indirect enum Number: CustomStringConvertible {
     }
 }
 
-var numbers = parseInput(input: input)
-let firstNumber = numbers.removeFirst()
-var part1 = numbers.reduce(firstNumber, +).toNumber().magnitude()
-print("Puzzle1:", part1)
-
-let part2 = numbers
-    .map { number in
-        max(
-            numbers.map { (number + $0).toNumber().magnitude() }.reduce(0, max),
-            numbers.map { ($0 + number).toNumber().magnitude() }.reduce(0, max)
-        )
-    }
-    .reduce(0, max)
-
-print("Puzzle2:", part2)
+//var numbers = parseInput(input: input)
+//let firstNumber = numbers.removeFirst()
+//var part1 = numbers.reduce(firstNumber, +).toNumber().magnitude()
+//print("Puzzle1:", part1)
+//
+//let part2 = numbers
+//    .map { number in
+//        max(
+//            numbers.map { (number + $0).toNumber().magnitude() }.reduce(0, max),
+//            numbers.map { ($0 + number).toNumber().magnitude() }.reduce(0, max)
+//        )
+//    }
+//    .reduce(0, max)
+//
+//print("Puzzle2:", part2)

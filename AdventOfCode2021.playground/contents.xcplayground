@@ -24,5 +24,6 @@
         <page name='21_Dirac_Dice'/>
         <page name='22_Reactor_Reboot'/>
         <page name='24_Arithmetic_Logic_Unit'/>
+        <page name='23_ Amphipod'/>
     </pages>
 </playground>

@@ -152,51 +152,51 @@ let polymerPuzzle1 = (1...10).reduce(template) { polymer, step in
         }
 }
 
-var elementCountsPuzzle1 = elements
-    .map { polymerPuzzle1.components(separatedBy: $0).count }
-    .sorted()
-
-print("Puzzle 1: \(elementCountsPuzzle1.last! - elementCountsPuzzle1.first!)")
-
-let newPairsLookupTable = Dictionary(
-    uniqueKeysWithValues: pairs.map { (key: String, value: String) in
-        (key, [String(key.first!) + value, value + String(key.last!)])
-    }
-)
-
-var initialPairCounts: [String: Int] = zip(template, template.dropFirst())
-    .reduce(into: pairs.mapValues { _ in 0 }) { result, letters in
-        result[String(letters.0) + String(letters.1)]! += 1
-    }
-
-var elementCountsPuzzle2 = (1...40)
-    // Calculate pairs
-    .reduce(initialPairCounts) { counts, step in
-        counts
-            .compactMap { (pair, count) in
-                Dictionary(uniqueKeysWithValues: newPairsLookupTable[pair]!.map { ($0, count) })
-            }
-            .reduce([:]) {
-                $0.merging($1, uniquingKeysWith: +)
-            }
-    }
-    // Split into elements
-    .map {
-        $0.key.first == $0.key.last
-            ? [String($0.key.first!): $0.value * 2]
-            : [String($0.key.first!): $0.value * 2]
-    }
-    // Merge equal elements
-    .reduce([
-        // Add extra start and finish element
-        String(template.first!): 1,
-        String(template.last!): 1
-    ]) {
-        $0.merging($1, uniquingKeysWith: +)
-    }
-    // Elements in pairs are counted double
-    .mapValues { $0 / 2 }
-    .values
-    .sorted()
-
-print("Puzzle 2: \(elementCountsPuzzle2.last! - elementCountsPuzzle2.first!)")
+//var elementCountsPuzzle1 = elements
+//    .map { polymerPuzzle1.components(separatedBy: $0).count }
+//    .sorted()
+//
+//print("Puzzle 1: \(elementCountsPuzzle1.last! - elementCountsPuzzle1.first!)")
+//
+//let newPairsLookupTable = Dictionary(
+//    uniqueKeysWithValues: pairs.map { (key: String, value: String) in
+//        (key, [String(key.first!) + value, value + String(key.last!)])
+//    }
+//)
+//
+//var initialPairCounts: [String: Int] = zip(template, template.dropFirst())
+//    .reduce(into: pairs.mapValues { _ in 0 }) { result, letters in
+//        result[String(letters.0) + String(letters.1)]! += 1
+//    }
+//
+//var elementCountsPuzzle2 = (1...40)
+//    // Calculate pairs
+//    .reduce(initialPairCounts) { counts, step in
+//        counts
+//            .compactMap { (pair, count) in
+//                Dictionary(uniqueKeysWithValues: newPairsLookupTable[pair]!.map { ($0, count) })
+//            }
+//            .reduce([:]) {
+//                $0.merging($1, uniquingKeysWith: +)
+//            }
+//    }
+//    // Split into elements
+//    .map {
+//        $0.key.first == $0.key.last
+//            ? [String($0.key.first!): $0.value * 2]
+//            : [String($0.key.first!): $0.value * 2]
+//    }
+//    // Merge equal elements
+//    .reduce([
+//        // Add extra start and finish element
+//        String(template.first!): 1,
+//        String(template.last!): 1
+//    ]) {
+//        $0.merging($1, uniquingKeysWith: +)
+//    }
+//    // Elements in pairs are counted double
+//    .mapValues { $0 / 2 }
+//    .values
+//    .sorted()
+//
+//print("Puzzle 2: \(elementCountsPuzzle2.last! - elementCountsPuzzle2.first!)")

@@ -121,6 +121,6 @@ func part2(start1: Int, start2: Int) -> Int {
     return max(wins.0, wins.1)
 }
 
-print("Part 1", Part1(player1Start: 3, player2Start: 4).play())
-print("Part 2", part2(start1: 3, start2: 4))
+//print("Part 1", Part1(player1Start: 3, player2Start: 4).play())
+//print("Part 2", part2(start1: 3, start2: 4))
 

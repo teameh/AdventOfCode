@@ -194,14 +194,14 @@ var image = parseInput(input: testInput)
 
 print(image.debugDescription)
 
-image.addPadding(padding: 3, value: 0)
-print(image.debugDescription)
-
-while true {
-    image.enhance(algorithm: algorithm)
-    image.addPadding(padding: 1, value: image.first!.first!)
-    print(image.debugDescription)
-}
+//image.addPadding(padding: 3, value: 0)
+//print(image.debugDescription)
+//
+//while true {
+//    image.enhance(algorithm: algorithm)
+//    image.addPadding(padding: 1, value: image.first!.first!)
+//    print(image.debugDescription)
+//}
 
 //
 //let litPixelCount = image

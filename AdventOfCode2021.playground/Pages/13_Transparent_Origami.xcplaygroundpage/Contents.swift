@@ -886,4 +886,4 @@ func plotDots(_ dots: [Dot]) -> String {
     }.joined(separator: "\n")
 }
 
-print(plotDots(folded))
+//print(plotDots(folded))

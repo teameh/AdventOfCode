@@ -204,7 +204,7 @@ func findLowestRiskPath(grid: [[Int]]) -> Int {
     }
 }
 
-let grid = parseInput(input: input)
-
-print("Puzzle 1:", findLowestRiskPath(grid: grid))
-print("Puzzle 2:", findLowestRiskPath(grid: expandGrid(grid: grid)))
+//let grid = parseInput(input: input)
+//
+//print("Puzzle 1:", findLowestRiskPath(grid: grid))
+//print("Puzzle 2:", findLowestRiskPath(grid: expandGrid(grid: grid)))

@@ -95,19 +95,19 @@ func traverse(links: [(String, String)], path: [String], isPartTwo: Bool = false
         }
 }
 
-var pathsTestInput1 = traverse(links: parseInput(testInput), path: ["start"])
-print("Test part1: \(pathsTestInput1.count)")
-var pathsTestInput2 = traverse(links: parseInput(testInput), path: ["start"], isPartTwo: true)
-print("Test part2: \(pathsTestInput2.count)")
-
-var pathsLargerExample1 = traverse(links: parseInput(slightlyLargerExample), path: ["start"])
-print("Test larger example part1: \(pathsLargerExample1.count)")
-var pathsLargerExample2 = traverse(links: parseInput(slightlyLargerExample), path: ["start"], isPartTwo: true)
-print("Test larger example part2: \(pathsLargerExample2.count)")
-
-var pathsPuzzle1 = traverse(links: parseInput(input), path: ["start"])
-print("Puzzle part1: \(pathsPuzzle1.count)")
-var pathsPuzzle2 = traverse(links: parseInput(input), path: ["start"], isPartTwo: true)
-print("Puzzle part2: \(pathsPuzzle2.count)")
-
-print(String(format: "Took %0.3f sec", Double(startTime.timeIntervalSinceNow) * -1))
+//var pathsTestInput1 = traverse(links: parseInput(testInput), path: ["start"])
+//print("Test part1: \(pathsTestInput1.count)")
+//var pathsTestInput2 = traverse(links: parseInput(testInput), path: ["start"], isPartTwo: true)
+//print("Test part2: \(pathsTestInput2.count)")
+//
+//var pathsLargerExample1 = traverse(links: parseInput(slightlyLargerExample), path: ["start"])
+//print("Test larger example part1: \(pathsLargerExample1.count)")
+//var pathsLargerExample2 = traverse(links: parseInput(slightlyLargerExample), path: ["start"], isPartTwo: true)
+//print("Test larger example part2: \(pathsLargerExample2.count)")
+//
+//var pathsPuzzle1 = traverse(links: parseInput(input), path: ["start"])
+//print("Puzzle part1: \(pathsPuzzle1.count)")
+//var pathsPuzzle2 = traverse(links: parseInput(input), path: ["start"], isPartTwo: true)
+//print("Puzzle part2: \(pathsPuzzle2.count)")
+//
+//print(String(format: "Took %0.3f sec", Double(startTime.timeIntervalSinceNow) * -1))
