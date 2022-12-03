@@ -5,6 +5,7 @@ func runAllDays() {
 
     let days: [Day] = [
         Day1(),
+        Day2(),
     ]
 
     days.forEach { $0.run() }

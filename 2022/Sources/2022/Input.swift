@@ -12,8 +12,12 @@ import Foundation
 internal enum Files {
   /// input01.txt
   internal static let input01Txt = File(name: "input01", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input02.txt
+  internal static let input02Txt = File(name: "input02", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample01.txt
   internal static let sample01Txt = File(name: "sample01", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample02.txt
+  internal static let sample02Txt = File(name: "sample02", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
