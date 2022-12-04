@@ -16,12 +16,16 @@ internal enum Files {
   internal static let input02Txt = File(name: "input02", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// input03.txt
   internal static let input03Txt = File(name: "input03", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input04.txt
+  internal static let input04Txt = File(name: "input04", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample01.txt
   internal static let sample01Txt = File(name: "sample01", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample02.txt
   internal static let sample02Txt = File(name: "sample02", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample03.txt
   internal static let sample03Txt = File(name: "sample03", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample04.txt
+  internal static let sample04Txt = File(name: "sample04", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

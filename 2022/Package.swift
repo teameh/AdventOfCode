@@ -22,7 +22,9 @@ let package = Package(
             resources: [
                 .process("Input"),
             ],
-            swiftSettings: [.unsafeFlags(["-O"])],
+            swiftSettings: [
+                // .unsafeFlags(["-O"])
+            ],
             plugins: [
                 .plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin"),
             ]

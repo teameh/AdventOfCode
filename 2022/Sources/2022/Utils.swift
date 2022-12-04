@@ -7,3 +7,14 @@ extension File {
     }
 }
 
+extension Substring.SubSequence {
+    var intValue: Int {
+        Int(self, radix: 10)!
+    }
+}
+
+extension Character {
+    var intValue: Int {
+        Int(utf8.first!)
+    }
+}

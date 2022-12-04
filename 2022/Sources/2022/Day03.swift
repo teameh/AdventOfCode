@@ -31,10 +31,10 @@ struct Day3: Day {
 
 fileprivate extension Character {
     var priority: Int {
-        Int(utf8.first!) - (
+        intValue - (
             CharacterSet.lowercaseLetters.contains(unicodeScalars.first!)
-               ? Int(Character("a").utf8.first!) - 1
-               : Int(Character("A").utf8.first!) - 27
+                ? Character("a").intValue - 1
+                : Character("A").intValue - 27
             )
     }
 }

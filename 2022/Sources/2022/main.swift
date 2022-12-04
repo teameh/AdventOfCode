@@ -7,6 +7,7 @@ func runAllDays() {
         Day1(),
         Day2(),
         Day3(),
+        Day4(),
     ]
 
     days.forEach { $0.run() }
