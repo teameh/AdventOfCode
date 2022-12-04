@@ -35,6 +35,6 @@ fileprivate extension Character {
             CharacterSet.lowercaseLetters.contains(unicodeScalars.first!)
                 ? Character("a").intValue - 1
                 : Character("A").intValue - 27
-            )
+        )
     }
 }
