@@ -8,6 +8,7 @@ func runAllDays() {
         (Day2(), "13221", "13131"),
         (Day3(), "7795", "2703"),
         (Day4(), "494", "833"),
+        (Day5(), "BSDMQFLSP", "PGSQBFLDP"),
     ]
 
     days.forEach { day, resultOne, resultTwo in

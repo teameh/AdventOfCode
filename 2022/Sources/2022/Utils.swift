@@ -1,9 +1,12 @@
 import Foundation
 
 extension File {
-    func read() -> String {
-        try! String(contentsOfFile: path)
-            .trimmingCharacters(in: .whitespacesAndNewlines)
+    func read(trimmingCharacters: CharacterSet? = .whitespacesAndNewlines) -> String {
+        let content = try! String(contentsOfFile: path)
+        guard let trimmingCharacters = trimmingCharacters else {
+            return content
+        }
+        return content.trimmingCharacters(in: trimmingCharacters)
     }
 }
 
@@ -13,8 +16,20 @@ extension Substring.SubSequence {
     }
 }
 
+extension String {
+    var intValue: Int {
+        Int(self, radix: 10)!
+    }
+}
+
 extension Character {
     var intValue: Int {
         Int(utf8.first!)
+    }
+}
+
+extension Collection {
+    public subscript(safe index: Index) -> Element? {
+        indices.contains(index) ? self[index] : nil
     }
 }
