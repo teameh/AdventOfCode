@@ -20,6 +20,8 @@ internal enum Files {
   internal static let input04Txt = File(name: "input04", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// input05.txt
   internal static let input05Txt = File(name: "input05", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input06.txt
+  internal static let input06Txt = File(name: "input06", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample01.txt
   internal static let sample01Txt = File(name: "sample01", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample02.txt
@@ -30,6 +32,8 @@ internal enum Files {
   internal static let sample04Txt = File(name: "sample04", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample05.txt
   internal static let sample05Txt = File(name: "sample05", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample06.txt
+  internal static let sample06Txt = File(name: "sample06", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
