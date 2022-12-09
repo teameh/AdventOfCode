@@ -1,30 +1,9 @@
 import Foundation
 import Algorithms
 
-enum FileSystem {
-    indirect case dir([FileSystem])
-    case file(Int)
-
-    var size: Int {
-        switch self {
-        case let .file(size):
-            return size
-        case let .dir(contents):
-            return contents
-                .map(\.size)
-                .reduce(0, +)
-        }
-    }
-
-    var dirs: [FileSystem] {
-        switch self {
-        case .file:
-            return []
-        case let .dir(contents):
-            return [self] + contents
-                .flatMap { $0.dirs}
-        }
-    }
+private struct FileSystem {
+    var size: Int
+    var dirs: [FileSystem]
 }
 
 struct Day7: Day {
@@ -36,7 +15,7 @@ struct Day7: Day {
             .reversed()
             .map { $0 }
 
-        fileSystem = .dir(mapDir(lines: &lines))
+        fileSystem = mapDir(lines: &lines)
     }
 
     func partOne() -> String {
@@ -56,18 +35,22 @@ struct Day7: Day {
     }
 }
 
-private func mapDir(lines: inout [String]) -> [FileSystem] {
-    var contents: [FileSystem] = []
+fileprivate func mapDir(lines: inout [String]) -> FileSystem {
+    var size = 0
+    var subdirs: [FileSystem] = []
     while let line = lines.popLast() {
         if line == "$ cd /" || line == "$ ls" || line.starts(with: "dir ") {
             continue
         } else if line == "$ cd .." {
             break
         } else if line.contains("$ cd ") {
-            contents.append(.dir(mapDir(lines: &lines)))
+            subdirs.append(mapDir(lines: &lines))
         } else {
-            contents.append(.file(line.components(separatedBy: " ")[0].intValue))
+            size += line.components(separatedBy: " ")[0].intValue
         }
     }
-    return contents
+
+    size += subdirs.map(\.size).reduce(0, +)
+    let dir = FileSystem(size: size, dirs: subdirs)
+    return FileSystem(size: size, dirs: [dir] + subdirs.flatMap { $0.dirs })
 }
