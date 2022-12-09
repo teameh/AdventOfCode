@@ -8,12 +8,13 @@ protocol Day {
 }
 
 extension Day {
-    func run() -> (String, String) {
+    static func run() -> (String, String) {
         let startTime = Date()
 
         print("\n------------ \(type(of: self)) ------------")
-        let result1 = partOne()
-        let result2 = partTwo()
+        let day = Self()
+        let result1 = day.partOne()
+        let result2 = day.partTwo()
         print(result1)
         print(result2)
 

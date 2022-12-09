@@ -3,14 +3,14 @@ import Foundation
 func runAllDays() {
     let startTime = Date()
 
-    let days: [(Day, String, String)] = [
-        (Day1(), "68802", "205370"),
-        (Day2(), "13221", "13131"),
-        (Day3(), "7795", "2703"),
-        (Day4(), "494", "833"),
-        (Day5(), "BSDMQFLSP", "PGSQBFLDP"),
-        (Day6(), "1282", "3513"),
-        (Day7(), "1243729", "4443914"),
+    let days: [(Day.Type, String, String)] = [
+        (Day1.self, "68802", "205370"),
+        (Day2.self, "13221", "13131"),
+        (Day3.self, "7795", "2703"),
+        (Day4.self, "494", "833"),
+        (Day5.self, "BSDMQFLSP", "PGSQBFLDP"),
+        (Day6.self, "1282", "3513"),
+        (Day7.self, "1243729", "4443914"),
     ]
 
     days.forEach { day, resultOne, resultTwo in
