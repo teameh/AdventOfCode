@@ -46,7 +46,7 @@ fileprivate func mapDir(lines: inout [String]) -> FileSystem {
         } else if line.contains("$ cd ") {
             subdirs.append(mapDir(lines: &lines))
         } else {
-            size += line.components(separatedBy: " ")[0].intValue
+            size += Int(line.components(separatedBy: " ")[0])
         }
     }
 

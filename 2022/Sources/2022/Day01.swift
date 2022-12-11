@@ -8,7 +8,7 @@ struct Day1: Day {
         .map {
             $0
                 .split(separator: "\n")
-                .map(\.intValue)
+                .map(Int.init)
         }
 
     func partOne() -> String {

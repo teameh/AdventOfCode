@@ -11,6 +11,20 @@ func runAllDays() {
         (Day5.self, "BSDMQFLSP", "PGSQBFLDP"),
         (Day6.self, "1282", "3513"),
         (Day7.self, "1243729", "4443914"),
+        (Day8.self, "1801", "209880"),
+        (Day9.self, "5878", "2405"),
+        (
+            Day10.self,
+            "12520",
+"""
+####.#..#.###..####.###....##..##..#....
+#....#..#.#..#....#.#..#....#.#..#.#....
+###..####.#..#...#..#..#....#.#....#....
+#....#..#.###...#...###.....#.#.##.#....
+#....#..#.#....#....#....#..#.#..#.#....
+####.#..#.#....####.#.....##...###.####.
+"""
+        ),
     ]
 
     days.forEach { day, resultOne, resultTwo in
@@ -19,7 +33,7 @@ func runAllDays() {
         assert(result.1 == resultTwo, "\(result.1) != \(resultTwo)")
     }
 
-    print(String(format: "\n⏱  Total time: %0.4f sec", Double(startTime.timeIntervalSinceNow) * -1))
+    print(String(format: "\n⏱ Total time for \(days.count) days: %0.4f sec", Double(startTime.timeIntervalSinceNow) * -1))
 }
 
 runAllDays()

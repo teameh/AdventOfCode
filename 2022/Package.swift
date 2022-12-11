@@ -26,7 +26,7 @@ let package = Package(
                 // .unsafeFlags(["-O"])
             ],
             plugins: [
-                .plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin"),
+                // .plugin(name: "SwiftGenPlugin", package: "SwiftGenPlugin"),
             ]
         ),
     ]

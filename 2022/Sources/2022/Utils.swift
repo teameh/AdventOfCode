@@ -10,15 +10,17 @@ extension File {
     }
 }
 
-extension Substring.SubSequence {
-    var intValue: Int {
-        Int(self, radix: 10)!
+extension Int {
+    init(_ char: Character) {
+        self = Int(String(char), radix: 10)!
     }
-}
 
-extension String {
-    var intValue: Int {
-        Int(self, radix: 10)!
+    init(_ text: Substring.SubSequence) {
+        self = Int(text, radix: 10)!
+    }
+
+    init(_ text: String) {
+        self = Int(text, radix: 10)!
     }
 }
 

@@ -28,7 +28,7 @@ struct Day5: Day {
         let instructions: [(Int, Int, Int)] = lines
             .filter { $0.contains("move") }
             .map { $0.components(separatedBy: " ") }
-            .map { ($0[1].intValue, $0[3].intValue, $0[5].intValue) }
+            .map { (Int($0[1]), Int($0[3]), Int($0[5])) }
 
         return (stacks, instructions)
     }

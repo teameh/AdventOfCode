@@ -24,6 +24,12 @@ internal enum Files {
   internal static let input06Txt = File(name: "input06", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// input07.txt
   internal static let input07Txt = File(name: "input07", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input08.txt
+  internal static let input08Txt = File(name: "input08", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input09.txt
+  internal static let input09Txt = File(name: "input09", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// input10.txt
+  internal static let input10Txt = File(name: "input10", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample01.txt
   internal static let sample01Txt = File(name: "sample01", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample02.txt
@@ -38,6 +44,12 @@ internal enum Files {
   internal static let sample06Txt = File(name: "sample06", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
   /// sample07.txt
   internal static let sample07Txt = File(name: "sample07", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample08.txt
+  internal static let sample08Txt = File(name: "sample08", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample09.txt
+  internal static let sample09Txt = File(name: "sample09", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
+  /// sample10.txt
+  internal static let sample10Txt = File(name: "sample10", ext: "txt", relativePath: "", mimeType: "application/octet-stream")
 }
 // swiftlint:enable explicit_type_interface identifier_name
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

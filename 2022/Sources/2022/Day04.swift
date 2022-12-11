@@ -9,7 +9,7 @@ struct Day4: Day {
             $0
                 .split(separator: ",")
                 .map { $0.split(separator: "-") }
-                .map { $0.first!.intValue...$0.last!.intValue }
+                .map { Int($0.first!)...Int($0.last!) }
         }
 
     func partOne() -> String {
