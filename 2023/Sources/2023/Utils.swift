@@ -30,6 +30,12 @@ extension Character {
     }
 }
 
+extension String {
+    public subscript(_ idx: Int) -> Character {
+        self[self.index(self.startIndex, offsetBy: idx)]
+    }
+}
+
 extension Collection {
     public subscript(safe index: Index) -> Element? {
         indices.contains(index) ? self[index] : nil

@@ -1,9 +1,12 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.7
 
 import PackageDescription
 
 let package = Package(
     name: "AdventOfCode",
+    platforms: [
+        .macOS(.v13)
+    ],
     products: [
         .executable(name: "2023", targets: ["2023"]),
     ],

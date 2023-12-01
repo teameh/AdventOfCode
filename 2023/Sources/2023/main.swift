@@ -4,7 +4,7 @@ func runAllDays() {
     let startTime = Date()
 
     let days: [(Day.Type, String, String)] = [
-        (Day1.self, "", ""),
+        (Day1.self, "55607", "55291"),
         (Day2.self, "", ""),
         (Day3.self, "", ""),
         (Day4.self, "", ""),
