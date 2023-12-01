@@ -1,0 +1,8 @@
+input_dir: Sources/2023/Input
+
+files:
+  inputs:
+    - .
+  outputs:
+    templateName: structured-swift5
+    output: Sources/2023/Input.swift
