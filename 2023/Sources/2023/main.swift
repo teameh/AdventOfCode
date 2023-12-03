@@ -6,7 +6,7 @@ func runAllDays() {
     let days: [(Day.Type, String, String)] = [
         (Day1.self, "55607", "55291"),
         (Day2.self, "2283", "78669"),
-        (Day3.self, "", ""),
+        (Day3.self, "535351", "87287096"),
         (Day4.self, "", ""),
         (Day5.self, "", ""),
         (Day6.self, "", ""),
